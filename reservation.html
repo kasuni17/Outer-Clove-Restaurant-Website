@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img/testimonial-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 20px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 16px;
+            background-color: white;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        
+        .container:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        input[type=text],
+        input[type=number],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        
+        input[type=submit] {
+            background-color: #835e00;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: center;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #d18c01;
+        }
+        
+        .container {
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        
+        button:hover {
+            background-color: #f9a908;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Online Reservation Form</h2>
+
+    <div class="container">
+        <form action="reserve.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name.." required>
+
+            <label for="contact">Contact Number</label>
+            <input type="number" id="contact" name="contact" placeholder="Your Contact Number.." required>
+
+            <label for="party_size">Party Size</label>
+            <input type="number" id="party_size" name="party_size" placeholder="Number of Guests.." required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message.." style="height:100px"></textarea>
+
+            <input type="submit" value="Submit">
+            <a href="view_reservation.php"><button type="button" id="view_reservation">View Reservations</button></a>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+</html>
